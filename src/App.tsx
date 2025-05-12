@@ -10,7 +10,7 @@ function App() {
         Este es tu proyecto con Vite + React + TypeScript + MUI funcionando 🚀
       </Typography>
       <Button variant="contained" color="primary">
-        Presióname
+        holiss
       </Button>
     </Container>
   );
