@@ -1,4 +1,6 @@
 import { Container, Typography, Button } from '@mui/material';
+import Formulario from './Components/Formulario';
+
 
 function App() {
   return (
@@ -12,7 +14,10 @@ function App() {
       <Button variant="contained" color="primary">
         holiss
       </Button>
+      <Formulario />
     </Container>
+
+  
   );
 }
 
