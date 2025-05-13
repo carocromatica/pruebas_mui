@@ -1,44 +1,16 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
+import themeOverrides from "./themeOverrides";
 
 const theme = createTheme({
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: '999px',
-          backgroundColor:'green',
-        },
-      },
+  palette: {
+    primary: {
+      main: "#ff33c4",
     },
-    MuiOutlinedInput: {
-  styleOverrides: {
-    root: {
-      borderRadius: 12,
-      backgroundColor: '#f5f5f5',
-      paddingRight: 4,
-    },
-    input: {
-      padding: '12px',
+    secondary: {
+      main: "#ff99d6",
     },
   },
-},
-MuiInputLabel: {
-  styleOverrides: {
-    root: {
-      fontSize: '12px',
-      padding:'8px'
-    },
-  },
-},
-MuiFormHelperText: {
-  styleOverrides: {
-    root: {
-      fontSize: '0.75rem',
-    },
-  },
-},
-
-  },
+  components: themeOverrides,
 });
 
 export default theme;
