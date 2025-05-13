@@ -10,7 +10,19 @@ const theme = createTheme({
       main: "#ff99d6",
     },
   },
+  
   components: themeOverrides,
+
+  typography: {
+  fontFamily: '"Cabin", sans-serif',
+  intro: {
+    
+  fontFamily: '"Cabin", sans-serif',
+    fontSize: '8rem',
+    fontWeight: 400,
+    color: '#444',
+  },
+}
 });
 
 export default theme;

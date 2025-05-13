@@ -17,64 +17,48 @@ const themeOverrides: Components<Omit<Theme, "components">> = {
     },
   },
 
-  MuiInputLabel: {
-  styleOverrides: {
-    root: {
-      fontSize: '12px',
-      padding:'8px'
+  MuiTypography: {
+    styleOverrides: {
+      root: {
+        // 🟣 Título destacado grande
+        '&.h1-destacado': {
+          fontSize: '2.75rem',
+          fontWeight: 700,
+          color: '#ff33c4',
+          lineHeight: 1.2,
+        },
+        // ⚫ Título resumen de sección
+        '&.resumen-modulo': {
+          fontSize: '1.5rem',
+          fontWeight: 600,
+          color: '#555',
+          fontStyle: 'italic',
+          lineHeight: 1.4,
+        },
+        // 🟡 Texto secundario
+        '&.body-secundario': {
+          fontSize: '0.95rem',
+          fontWeight: 400,
+          color: '#666',
+          lineHeight: 1.6,
+        },
+        // 🟢 Etiqueta pequeña
+        '&.etiqueta': {
+          fontSize: '0.75rem',
+          fontWeight: 500,
+          textTransform: 'uppercase',
+          letterSpacing: '0.08em',
+          color: '#999',
+        },
+      },
     },
   },
-},
-MuiFormHelperText: {
-  styleOverrides: {
-    root: {
-      fontSize: '0.75rem',
-    },
-  },
-},
 
-  MuiOutlinedInput: {
-    styleOverrides: {
-      root: {
-        borderRadius: 12,
-        backgroundColor: "#f5f5f5",
-        transition: "background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease",
-        "& .MuiOutlinedInput-notchedOutline": {
-          transition: "border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
-        },
-        "&.Mui-focused": {
-          backgroundColor: "#fff0fa",
-        },
-        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-          borderColor: "#ff33c4",
-          boxShadow: "0 0 0 2px rgba(255, 51, 196, 0.2)",
-        },
-        "&:hover .MuiOutlinedInput-notchedOutline": {
-          borderColor: "#ff99d6",
-          boxShadow: "0 0 0 2px rgba(255, 153, 214, 0.15)",
-        },
-      },
-      input: {
-        padding: "12px",
-        color: "#000",
-      },
-    },
-  },
-  MuiSelect: {
-    styleOverrides: {
-      root: {
-        borderRadius: 12,
-        backgroundColor: "#f5f5f5",
-        "&:hover": {
-          backgroundColor: "#fff0fa",
-        },
-        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-          borderColor: "#ff33c4",
-          boxShadow: "0 0 0 2px rgba(255, 51, 196, 0.2)",
-        },
-      },
-    },
-  },
+
+
+
+
+
 };
 
 export default themeOverrides;
