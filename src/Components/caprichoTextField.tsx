@@ -1,7 +1,7 @@
 // src/Components/capricho.tsx
 import { TextField, styled } from '@mui/material';
 
-const CaprichoTextField = styled(TextField)(({ theme }) => ({
+const CaprichoTextField = styled(TextField)(({ }) => ({
   '& .MuiFilledInput-root': {
     border: '1px solid #ff33c4',
     borderRadius: '8px',
