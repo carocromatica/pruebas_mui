@@ -1,5 +1,5 @@
 import { TextField, MenuItem, Box } from "@mui/material";
-import CaprichoTextField from '../Components/CaprichoTextField';
+import CaprichoTextField from '../Components/caprichoTextField';
 
 export default function FormularioFlotante() {
   return (
